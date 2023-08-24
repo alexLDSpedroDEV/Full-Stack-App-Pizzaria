@@ -1,9 +1,0 @@
-created new app - 
- - criar repositorio no github.
- - Start o codigo com next.js / Testar as funcionalides
- - limpar todos os Arquivos inuteis
- - Created login screen - 
-  	- usamos o cleak como autenticador / Google e Facebook
-  	- testar todos as funcionalidades 
-  	- Customizar a tela de login
- -
