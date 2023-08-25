@@ -1,5 +1,7 @@
 import SlideBar from "@/components/SlideBar";
-import NavBar from "./NavBar";
+import NavBar from "../components/NavBar";
+import Carrosel from "@/components/Carrosel/Carrosel";
+import Delicius from "@/components/Delicius";
 
 
 export default function Home() {
@@ -7,7 +9,8 @@ export default function Home() {
     <div>
       <NavBar/>
       <SlideBar/>
-      
+      <Carrosel/>
+      <Delicius/>
     </div>
   )
 }

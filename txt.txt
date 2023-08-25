@@ -10,8 +10,10 @@ created new app -
  	- faixa com texto de promoção vemelha 
  	- com tres colunos 
  	- links / nome site / login e card
- -created SiledBar 
+ - created SiledBar 
  	- criar dois conteiner 
  	- texto simples / btn Order Now 
  	- imagem simples 
+ - created server / routes 
+	- 
  	
