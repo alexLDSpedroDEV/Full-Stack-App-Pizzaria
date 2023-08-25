@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 :root {
+  overflow-x: hidden
   
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    
+::-webkit-scrollbar {
+    width: 5px;
   }
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  heigth: 20px;
 }
 
+body {
+  overflow: hidden
+  
+}

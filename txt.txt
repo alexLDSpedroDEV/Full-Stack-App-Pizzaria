@@ -1,0 +1,17 @@
+created new app - 
+ - criar repositorio no github.
+ - Start o codigo com next.js / Testar as funcionalides
+ - limpar todos os Arquivos inuteis
+ - Created login screen - 
+  	- usamos o cleak como autenticador / Google e Facebook
+  	- testar todos as funcionalidades 
+  	- Customizar a tela de login
+ - created NavBar
+ 	- faixa com texto de promoção vemelha 
+ 	- com tres colunos 
+ 	- links / nome site / login e card
+ -created SiledBar 
+ 	- criar dois conteiner 
+ 	- texto simples / btn Order Now 
+ 	- imagem simples 
+ 	

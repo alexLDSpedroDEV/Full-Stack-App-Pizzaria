@@ -1,5 +1,6 @@
 import { ClerkProvider } from '@clerk/nextjs'
- 
+import './globals.css'
+
 export const metadata = {
   title: 'App Pizzaria',
 }
