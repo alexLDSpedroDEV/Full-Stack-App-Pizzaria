@@ -16,4 +16,19 @@ created new app -
  	- imagem simples 
  - created server / routes 
 	- 
+	
+	
+	
+	
+- enviar os pedidos para renderizar na mesma pagina 
+	- criar um "banco" de Produtos *
+ 		- Produtos: id / name / value / image / tipo
+ 		
+ 	- quando clicar em Explore mandar para Food o tipo da comida * 
+ 		- tipos: pizza / burgers / pastas
+ 		
+ 	- em food receber o tipo da comida *
  	
+ 	- criar um link para a apagina menu quando clicar em explorar
+ 	- criar um filtro de array que vai trazer apenas os item que tem o tipo igual
+ 	- mostrar esse dados como um menu

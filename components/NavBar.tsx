@@ -11,10 +11,10 @@ function NavBar() {
               
         <div className=' w-screen grid grid-cols-2 h-[90px] border-b-[1px] border-red-500 md:grid-cols-3'>
           
-          <div className='hidden md:flex gap-7 align-middle items-center
+          <div className='hidden md:flex gap-7 align-middle items-center p-4
             '>
-            <div className='cursor-pointer p-2'>HomePage</div>
-            <Link href={'../pages/index'}>Menu</Link>
+            <Link href={'/'}>HomePage</Link>
+            <Link href={'/menu'}>Menu</Link>
           </div>
           
           
