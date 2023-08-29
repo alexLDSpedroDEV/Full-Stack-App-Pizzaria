@@ -2,7 +2,7 @@ const express = require('express');
 const mongosse = require('mongoose');
 const app = express();
 
-
+const router = require('./routers/routers.jsx')
 const PORT = process.env.PORT | 8080
 const cors = require('cors');
 
@@ -25,7 +25,7 @@ app.get("/", async (req,res) => {
     res.json({message: "oi express"})
 })
 
-
+app.use('/produto', router);
 
 //conectando o servidor ao mongose
 mongosse.connect('mongodb+srv://alexlopes:orquideas1809@cluid1.ekh4puk.mongodb.net/?retryWrites=true&w=majority')

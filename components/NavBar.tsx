@@ -24,7 +24,7 @@ function NavBar() {
 
           <div className=' flex justify-end items-center pr-5 gap-4  sm:w-full'>
             <div><UserButton afterSignOutUrl="/"/></div>
-            <div>Card</div>
+            <Link href={'/cart'}>Cart</Link>
           </div>
           
         </div>
