@@ -24,8 +24,13 @@ export default class ListCarros extends React.Component{
     }
 
    
-    
-    
+      (data : any) {
+        if (data.tipo == "pizza") {
+          return data;
+        }
+    }
+
+    items = FoodItens.filter(filtro)
 
     render() {
         
@@ -36,6 +41,13 @@ export default class ListCarros extends React.Component{
                     this.state.produtos.map((item : any, index : any) => (
                         <div key={index}>
                             <h2>{item.name}</h2>
+                        </div>
+                    ))
+                }
+                {
+                    FoodItens.map((item : any, index : any) => (
+                        <div key={index}>
+                            
                         </div>
                     ))
                 }

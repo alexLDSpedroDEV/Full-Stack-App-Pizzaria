@@ -30,7 +30,17 @@ created new app -
  	- criar um filtro de array que vai trazer apenas os item que tem o tipo igual *
  	- mostrar esse dados como um menu * 
  	
- - 
+ - created o cart
+  	- criar um nova Base de dados / app-pizzaria --
+  	- criar nova collection / cart * 
+  	- fazer onclick no btn ADD TO CARD *
+  	- enviar o nome do obj do btn *
+  	- criar um modulo para receber o nome do produto *
+  	- criar uma api que envie o nome recebido para o banco de dados * 
+  	- criar uma new page com name Cart * 
+  	- criar uma api que pegue todos os dados a collection cart *
+  	- enviar todos os dados pegos para a pagina Cart
+  	- mostra todos os dados de forma bonita
  	
  	
  	
