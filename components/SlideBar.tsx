@@ -9,10 +9,10 @@ function SlideBar() {
         </div>
         <div className='pt-5 flex align-bottom md:pt-0'>
             <Image 
-                    src='/slide1.png' 
+                    src='/slide2.png' 
                     alt="logo" 
-                    width={550} 
-                    height={100}
+                    width={1300} 
+                    height={600}
                     className='w-[100vw] h-auto'
                 />
         </div>
