@@ -1,20 +1,49 @@
 const router = require('express').Router()
 const Produto = require('../models/produto.jsx');
 
+const uploadUser = require('../../middlewares/uploadImage.jsx')
+
+
+
 
 //create - criação de dados
-router.post('/', async (req, res) => {
+router.post('/', uploadUser.single('image'), async (req, res) => {
     
     // pegando os dado da req.body
     const {name} = req.body
+    /* const {value} = req.body
+    const {tipo} = req.body
+    const {text} = req.body */
+    
+
+    //pegando o nome da imagem que salvamos no sistema para armazenar no banco de dados
+    const fileName = req.file;
+
+    console.log(name)
+    console.log(fileName)
+        
 
     
+
+    if(req.file) {
+        return res.json({
+            erro: false,
+            message: "upload image com sucesso"
+        })
+    }
+
+    
+
     //verificação dos dados da requisição
     !name ? res.status(422).json({error: "O nome é obrigatorio"}) : ""
      
     //criando um objeto que vai receber todos os parametros para poder ser enviado ao banco de dados
     const newProduto = {
         name, 
+        fileName,
+        /* value, 
+        tipo,
+        text, */
     }
 
     //usando o metodo created

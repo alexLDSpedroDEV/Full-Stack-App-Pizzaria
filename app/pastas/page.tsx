@@ -11,8 +11,7 @@ function page() {
   const [contador, setcontador] = useState<any>(0)
   
 
-  //chamar a API do backend
-  const [data,setData] = useState<any>()
+  
 
   function filtro (data : any) {
     if (data.tipo == "pasta") {
@@ -47,15 +46,35 @@ function page() {
   }
 
 
-  const API = ( name : String ) => {
+  const API = (  data : any) => {
     //enviando os dados do state (json que criamos) para a url do backend
-     axios.post('http://localhost:8080/produto/', {name: name})
+    console.log(data)
 
-    .then(res => {
-        alert("Registrado com sucesso")
-    })
+    Id.map((item: any) => {
+      if (item.name === data) {
+          const formData = new FormData();
+          formData.append('image', item.image);
+          formData.append('name', item.name);
 
+         console.log(formData)
   
+          axios.post('http://localhost:8080/produto/', formData, {
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          })
+          .then(res => {
+             
+              console.log(res)
+              alert(res);
+          })
+          .catch(error => {
+              console.error('Erro ao registrar:', error);
+          });
+      }
+  });
+  
+
   }
   
   

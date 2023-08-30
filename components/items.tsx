@@ -24,13 +24,6 @@ export default class ListCarros extends React.Component{
     }
 
    
-      (data : any) {
-        if (data.tipo == "pizza") {
-          return data;
-        }
-    }
-
-    items = FoodItens.filter(filtro)
 
     render() {
         
