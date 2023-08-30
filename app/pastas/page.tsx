@@ -52,11 +52,18 @@ function page() {
 
     Id.map((item: any) => {
       if (item.name === data) {
+
           const formData = new FormData();
+
           formData.append('image', item.image);
           formData.append('name', item.name);
+          formData.append('value', item.value);
+          formData.append('tipo', item.tipo);
+          formData.append('text', item.text);
+          
 
-         console.log(formData)
+         
+         
   
           axios.post('http://localhost:8080/produto/', formData, {
               headers: {

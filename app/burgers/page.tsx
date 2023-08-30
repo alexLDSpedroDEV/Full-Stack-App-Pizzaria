@@ -47,15 +47,42 @@ function page() {
   }
 
 
-  const API = ( name : String ) => {
+  const API = (  data : any) => {
     //enviando os dados do state (json que criamos) para a url do backend
-     axios.post('http://localhost:8080/produto/', {name: name})
+    console.log(data)
 
-    .then(res => {
-        alert("Registrado com sucesso")
-    })
+    Id.map((item: any) => {
+      if (item.name === data) {
 
+          const formData = new FormData();
+
+          formData.append('image', item.image);
+          formData.append('name', item.name);
+          formData.append('value', item.value);
+          formData.append('tipo', item.tipo);
+          formData.append('text', item.text);
+          
+
+         
+         
   
+          axios.post('http://localhost:8080/produto/', formData, {
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          })
+          .then(res => {
+             
+              console.log(res)
+              alert(res);
+          })
+          .catch(error => {
+              console.error('Erro ao registrar:', error);
+          });
+      }
+    });
+  
+
   }
   
   

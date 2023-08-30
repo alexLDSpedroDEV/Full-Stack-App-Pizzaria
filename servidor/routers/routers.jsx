@@ -7,7 +7,49 @@ const uploadUser = require('../../middlewares/uploadImage.jsx')
 
 
 //create - criação de dados
-router.post('/', uploadUser.single('image'), async (req, res) => {
+router.post('/', async (req, res) => {
+    
+    // pegando os dado da req.body
+    const {name} = req.body
+    const {value} = req.body
+    const {tipo} = req.body
+    const {text} = req.body
+    const {image} = req.body
+    
+
+   
+        
+
+    
+
+    //verificação dos dados da requisição
+    !name ? res.status(422).json({error: "O nome é obrigatorio"}) : ""
+     
+    //criando um objeto que vai receber todos os parametros para poder ser enviado ao banco de dados
+    const newProduto = {
+        name, 
+        value, 
+        tipo,
+        text,
+        image,
+    }
+
+    //usando o metodo created
+    try{
+        //salvando o dado no banco de dado
+        await Produto.create(newProduto);
+        
+        res.status(201).json({message: "pessoa inserido no servidor com sucesso"})
+
+
+    } catch (error) {
+        res.status(500).json({error: error})
+    }
+})
+
+
+//create - criação de dados
+router.post('/update', uploadUser.single('image'), async (req, res) => {
     
     // pegando os dado da req.body
     const {name} = req.body
@@ -20,7 +62,7 @@ router.post('/', uploadUser.single('image'), async (req, res) => {
     const fileName = req.file;
 
     console.log(name)
-    console.log(fileName)
+    console.log(req.file)
         
 
     
@@ -58,7 +100,6 @@ router.post('/', uploadUser.single('image'), async (req, res) => {
         res.status(500).json({error: error})
     }
 })
-
 
 // Read - ler todos os dados do banco de dado
 router.get('/buscar/', async (req, res) => {
