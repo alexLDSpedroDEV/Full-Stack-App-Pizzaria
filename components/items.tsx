@@ -5,6 +5,7 @@ import Image from 'next/image'
 export default class ListCarros extends React.Component {
 
 
+
     //usando o state do react para criar um list de carros
     state = {
         produtos: [],
@@ -22,8 +23,22 @@ export default class ListCarros extends React.Component {
                 this.setState({ produtos: dadosProdutos })
             })
     }
+    
 
+    calculadora() {
+        this.state.produtos.map((item: any, index: any) => {
+            var sum = 0;
+            for (var i = 0; i < item.value.length; i++) {
+                var soma = item.orderItems[i];
+                    sum += soma.valor;
+            }
+            return sum
+        })
+        
 
+    }
+
+    
 
     render() {
 
@@ -62,7 +77,7 @@ export default class ListCarros extends React.Component {
 
                         <div className=' grid grid-cols-2 justify-between mb-6 xl:mb-10'>
                             <h2>Total</h2>
-                            <h2 className='text-end'>$90</h2>
+                            <h2 className='text-end'>{this.calculadora()}</h2>
                         </div>
                         <div className='flex justify-end'>
                             <button className=' uppercase bg-red-600 p-3 rounded-md text-white '>checkout</button>
