@@ -77,7 +77,7 @@ export default class ListCarros extends React.Component {
 
                         <div className=' grid grid-cols-2 justify-between mb-6 xl:mb-10'>
                             <h2>Total</h2>
-                            <h2 className='text-end'>{this.calculadora()}</h2>
+                            <h2 className='text-end'>{}</h2>
                         </div>
                         <div className='flex justify-end'>
                             <button className=' uppercase bg-red-600 p-3 rounded-md text-white '>checkout</button>
