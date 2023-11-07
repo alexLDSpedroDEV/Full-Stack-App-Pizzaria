@@ -39,4 +39,4 @@ mongosse.connect('mongodb+srv://alexlopes:orquideas1809@cluid1.ekh4puk.mongodb.n
     })
 })
 
-.catch(() => { console.log("error")})
+.catch((erro) => { console.log(erro)})

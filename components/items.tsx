@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import Image from 'next/image'
+import DeleteItem from './deleteItem'
+import Values from './values'
 
 export default class ListCarros extends React.Component {
 
@@ -22,21 +24,11 @@ export default class ListCarros extends React.Component {
                 //usando a funçao setState para colocar todos os dados de dadosCarros em carros
                 this.setState({ produtos: dadosProdutos })
             })
+            
     }
     
 
-    calculadora() {
-        this.state.produtos.map((item: any, index: any) => {
-            var sum = 0;
-            for (var i = 0; i < item.value.length; i++) {
-                var soma = item.orderItems[i];
-                    sum += soma.valor;
-            }
-            return sum
-        })
-        
-
-    }
+    
 
     
 
@@ -52,40 +44,15 @@ export default class ListCarros extends React.Component {
                                     <Image src={item.image} alt={item.name} width={250} height={250} className='w-[80px] xl:w-[120px]' />
                                     <h2 className='text-red-500 text-[15px] xl:text-[20px] xl:font-semibold font-bold'>{item.name}</h2>
                                     <h2 className='flex ml-7 text-red-700 font-bold'>${item.value}</h2>
-                                    <button className='text-red-700 font-bold text-[20px] hover:cursor-pointer'>X</button>
+                                    <DeleteItem  idItem={item._id}/>
+                                    
                                 </div>
                             </div>
                         ))
                     }
                 </div>
-                <div className='bg-red-100 min-h-[50vh] flex items-center justify-center xl:p-4 xl:h-screen'>
-                    <div className='w-[80vw] m-auto text-red-700 xl:text-[20px]'>
-                        <div className=' grid grid-cols-2 justify-between mb-3 xl:mb-6'>
-                            <h2>Subtotel </h2>
-                            <h2 className='text-end'>$90</h2>
-                        </div>
-
-                        <div className=' grid grid-cols-2 justify-between mb-3 xl:mb-6'>
-                            <h2>Service Cost</h2>
-                            <h2 className='text-end'>$0.00</h2>
-                        </div>
-
-                        <div className=' grid grid-cols-2 justify-between mb-6 xl:mb-10'>
-                            <h2>Delivery Cost</h2>
-                            <h2 className='text-end text-green-500'>FREE!</h2>
-                        </div>
-
-                        <div className=' grid grid-cols-2 justify-between mb-6 xl:mb-10'>
-                            <h2>Total</h2>
-                            <h2 className='text-end'>{}</h2>
-                        </div>
-                        <div className='flex justify-end'>
-                            <button className=' uppercase bg-red-600 p-3 rounded-md text-white '>checkout</button>
-                        </div>
-                        
-                    </div>
-                </div>
-
+                
+               <Values />
 
             </div>
         )

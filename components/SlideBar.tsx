@@ -1,19 +1,23 @@
 import React from 'react'
 import Image from 'next/image'
 
+
+
 function SlideBar() {
+
+  
   return (
-    <div className=' w-screen h-[calc(100vh - 140px)] grid grid-cols-1 bg-red-200 md:grid-cols-2'>
-        <div className='flex  w-[100vw] h-[30vh] items-center text-center font-black text-[28px] text-red-500 md:w-[50vw] md:h-screen'>
-            <h2 className='w-[80vw] m-auto uppercase md:w-[40vw] xl:w-[400px] xl:text-[40px]'>always fresh & always crispy & always hot</h2>
+    <div className=' w-screen h-[calc(100vh - 140px)] grid grid-cols-1  md:grid-cols-2 bg-[url(".././public/bgHome.jpg")] bg-center bg-cover'>
+        <div className='flex  w-[100vw] h-[30vh] items-center text-center font-black text-[28px] text-red-500 md:w-[50vw] sm:h-[45vh] md:h-screen'>
+            <h2 className='w-[80vw] m-auto uppercase md:w-[40vw] xl:w-[400px] xl:text-[45px]'>always fresh & always crispy & always hot</h2>
         </div>
-        <div className='pt-5 flex align-bottom md:pt-0'>
+        <div className=' flex align-bottom '>
             <Image 
-                    src='/slide2.png' 
+                    src='/home.jpg' 
                     alt="logo" 
-                    width={1300} 
-                    height={600}
-                    className='w-[100vw] h-auto'
+                    width={1200} 
+                    height={800}
+                    className='w-[100vw] md:h-[100vh] sm:h-[45vh] sm:bg-cover sm:bg-red-500'
                 />
         </div>
     </div>

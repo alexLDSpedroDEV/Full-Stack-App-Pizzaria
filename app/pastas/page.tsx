@@ -4,6 +4,8 @@ import React, { useEffect, useState } from 'react'
 import FoodItens from '../FoodItens'
 import Image from 'next/image';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function page() {
 
@@ -70,10 +72,13 @@ function page() {
                   'Content-Type': 'application/json'
               }
           })
+
           .then(res => {
              
-              console.log(res)
-              alert(res);
+            toast.success('Item excluído com sucesso', {
+              position: 'top-left',
+              autoClose: 2000, // Exibe a notificação por 3 segundos (ajuste conforme necessário)
+            });
           })
           .catch(error => {
               console.error('Erro ao registrar:', error);
