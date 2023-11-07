@@ -9,19 +9,24 @@ Nesse projeto teremos tela de login para usuários e administradores, tem uma pa
 
 Estou utilizando várias tecnologias modernas para construir o projeto:
 
-🔧 Backend:
+
+  🔧 Backend:
 
 Node.js e JavaScript: Essa combinação incrível tornou o desenvolvimento mais fácil e produtivo.
 Express.js: Utilizei esse poderoso biblioteca Js para facilitar a construção das API e manipulação dos dados.
 Cors: Conheci essa biblioteca nesse projeto, utilizai a para resolver um bag de dados que esta ocorrendo em meu codigo.
 
-🏦 Banco de Dado:
+
+
+  🏦 Banco de Dado:
 
 MongoDb: Utilizei esse banco de dado maravilho, pois ele é a combinação mais usada com servidores node.js.
 
 Mongoose: Utilizei essa biblioteca maravilhosa para facilitar a criação das requisições ao banco de dado.
 
-🌐 Frontend Web:
+
+
+  🌐 Frontend Web:
 
 React.js / Next.js : Desenvolvi uma interface web interativa e responsiva usando essas tecnologias poderosas.
 
@@ -43,8 +48,7 @@ Se você quiser conferir o código-fonte completo e saber mais sobre o projeto, 
 #seguros #ui
 #recruitmentsoftware
 #sql
-#javascriptVou começar a postar toda semana meus código, essas semanas estou desenvolvendo um projeto full stack: Sistema de restaurante completo! 🔥 Nesse projeto teremos tela de login para usuários e administradores, tem uma pagina principal com design lindo e subpaginas com dados do pegos do backend . 🚀 Estou utilizando várias tecnologias modernas para construir o projeto: 🔧 Backend: Node.js e JavaScript: Essa combinação incrível tornou o desenvolvimento mais fácil e produtivo. Express.js: Utilizei esse poderoso biblioteca Js para facilitar a construção das API e manipulação dos dados. Cors: Conheci essa biblioteca nesse projeto, utilizai a para resolver um bag de dados que esta ocorrendo em meu codigo. 🏦 Banco de Dado: MongoDb: Utilizei esse banco de dado maravilho, pois ele é a combinação mais usada com servidores node.js. Mongoose: Utilizei essa biblioteca maravilhosa para facilitar a criação das requisições ao banco de dado. 🌐 Frontend Web: React.js / Next.js : Desenvolvi uma interface web interativa e responsiva usando essas tecnologias poderosas. TypeScript: escolhi essa linguagem pois como estou trabalhando com dados oriundo do backend necessitava de uma tipificação forte. Tailwind: Utilizei essa biblioteca de estilização para criar um interface incrível para o usuario. Axios: Integrei o front-end com o backend, para poder mandar e receber as requisições do servidor. Se você quiser conferir o código-fonte completo e saber mais sobre o projeto, pode encontrá-lo no meu repositório: https://github.com/alexLDSpedroDEV/Full-Stack-App-Pizzaria #next.js #react #frontend #desenvolvimento #desenvolvimento #openToWork #legal #seguros #ui #recruitmentsoftware #sql #javascript
-Competências: TypeScript · Next.js · Tailwind CSS · MongoDB · Node.js
+#javascriptVou
 
 ![pizzaria1](https://github.com/alexLDSpedroDEV/Full-Stack-App-Pizzaria/assets/115034319/4a8f98f1-8e71-4611-81e2-cb18319131c7)
 
